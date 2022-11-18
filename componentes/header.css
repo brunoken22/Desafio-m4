@@ -59,15 +59,16 @@
    display: none;
    top: 0;
    right: 0;
-   position: absolute;
+   position: fixed;
    left: 0;
    bottom: 0;
    background-color: #161616;
    justify-content: center;
    flex-direction: column;
    align-items: center;
-   row-gap: 2rem;
+   row-gap: 5rem;
    height: 100vh;
+   z-index: 10;
 }
 .barra__enlaces li a{
    color: #fff;
