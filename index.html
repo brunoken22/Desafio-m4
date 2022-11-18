@@ -9,7 +9,7 @@
   <!-- HEADER -->
   <link rel="stylesheet" href="./componentes/header.css">
   <script defer src="./componentes/header.js"></script>
-
+  <script defer   src="./componentes/header__ham.js"></script>
   <!-- SERVICIOS -->
   <link rel="stylesheet" href="./pages/servicios.css">
   <script defer src="./pages/servicios.js"></script>
@@ -23,7 +23,20 @@
         <h2 class="logo__title">BRUNO</h2>
       </div>
       <div class="menu__enlaces">
-    
+        <ul class="enlace__barra">
+          <a href="#">
+            <li>
+              <div></div>
+              <div></div>
+              <div></div>
+              <ul class="barra__enlaces">
+                <li><a href="#" class="barra__portafolio">Portafolio</a></li>
+                <li><a href="#" class="barra__servicios">Servicios</a></li>
+                <li><a href="#" class="barra__contacto">Contacto</a></li>
+              </ul>
+            </li>
+          </a>
+        </ul>
       </div>
     </div>
     <div class="header__title">
@@ -48,6 +61,7 @@
     <div class="servicios__title">
       <h3>Mis Servicios</h3>
     </div>
+    <div class="servicios__contenful"></div>
     <template id="servicios__muestra">
       <figure class="servicios-imagen">
         <img src="" alt="">
