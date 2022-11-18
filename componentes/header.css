@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap');
+
+*{
+   box-sizing: border-box;
+   margin: 0;
+}
+.header{
+   background-image: url("../imagenes/image\ 4.png");
+   background-position: center;
+   height: 90vh;
+   display: flex;
+   flex-direction: column;
+}
+
+.header__menu{
+   display: flex;
+   margin: 1rem;
+}
+
+.menu__logo{
+
+}
+
+.menu__logo .logo__title{
+   font-family: 'Orbitron';
+   color: #fff;
+}
+
+
+
+.header__title {
+   display: flex;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+   font-family: 'Roboto';
+   color: #fff;
+   font-size:1.5rem;
+   height: 100%;
+}
+
+.title__titulo span{
+   display: block;
+}
+
+/* ---PRESENTACION--- */
+
+.presentacion{
+   background-color: #141414;
+   padding: 2rem;
+   height: 70vh;
+   justify-content: center;
+   text-align: center;
+}
+.presentacion__contenido{
+   display:flex;
+   flex-direction: column;
+   ;
+   color: #fff;
+   font-family: 'Roboto';
+   justify-content: center;
+   align-items: center;
+   row-gap: 2rem;
+   height: 100%
+}
+.contenido__title{
+   font-size: 1.7rem;
+   text-align: center;
+   margin-bottom:2rem;
+}
+
