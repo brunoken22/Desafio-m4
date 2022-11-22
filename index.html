@@ -9,11 +9,18 @@
   <!-- HEADER -->
   <link rel="stylesheet" href="./componentes/header.css">
   <script defer src="./componentes/header.js"></script>
-  <script defer   src="./componentes/header__ham.js"></script>
+  <script defer src="./componentes/header__ham.js"></script>
   <!-- SERVICIOS -->
   <link rel="stylesheet" href="./pages/servicios.css">
   <script defer src="./pages/servicios.js"></script>
 
+  <!-- FORMULARIO -->
+  <link rel="stylesheet" href="./componentes/form.css">
+  <script defer src="./componentes/form.js"></script>
+
+  <!-- FOOTER -->
+  <link rel="stylesheet" href="./componentes/footer.css">
+  <script defer src="./componentes/footer.js"></script>
 </head>
 <body>
   <!-- HEADER -->
@@ -33,6 +40,7 @@
                 <li><a href="#" class="barra__portafolio">Portafolio</a></li>
                 <li><a href="#" class="barra__servicios">Servicios</a></li>
                 <li><a href="#" class="barra__contacto">Contacto</a></li>
+                <div class="enlaces__close"><a href="#"></a></div>
               </ul>
             </li>
           </a>
@@ -63,11 +71,14 @@
     </div>
     <div class="servicios__contenful"></div>
     <template id="servicios__muestra">
-      <figure class="servicios-imagen">
-        <img src="" alt="">
-      </figure>
-      <div class="servicios-description">
-        <p>Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales vehicula velit. Aenean lobortis posuere tristique.</p>
+      <div class="muestra__contenedor">
+        <figure class="muestra-imagen">
+          <img src="" alt="" class="imagen__template">
+        </figure>
+        <h3 class="muestra__title"></h3>
+        <div class="muestra__description">
+          <p></p>
+        </div>
       </div>
     </template>
   </section>

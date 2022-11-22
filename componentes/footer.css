@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap');
+
+.footer{
+   background-color: #2C2C2C;
+
+}
+
+.footer__contenido{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 2.5rem 0;
+
+}
+
+.contenido__title {
+   font-family: 'Orbitron';
+   color: #fff;
+}
+
+.contenido__icon{
+   font-family: 'Poppins';
+   display: flex;
+   flex-direction: column;
+   align-items:flex-start;
+   justify-content:center;
+   margin: 2rem;
+   row-gap: 1rem;
+}
+
+.contenido__icon a{
+   color: #fff;
+   text-decoration: none;
+}
+
+.contenido__icon img{
+   margin-right: 0.7rem;
+}

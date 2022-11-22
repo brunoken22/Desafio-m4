@@ -74,6 +74,29 @@
    color: #fff;
    text-decoration: none;
 }
+
+.barra__enlaces .enlaces__close{
+   height: 0;
+   width: 0;
+}
+.enlaces__close{
+   display: block;
+   position: absolute;
+   top: 35px;
+   right: 30px;
+   text-align: center;
+   margin-right: 1rem;
+
+}
+
+.enlaces__close a{
+   text-decoration: none;
+}
+.enlaces__close a::before{
+   content:"X";
+   color: #fff;
+   font-family: 'Roboto';
+}
 /* ------------- */
 .header__title {
    display: flex;

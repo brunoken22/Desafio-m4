@@ -5,7 +5,21 @@ function main() {
    api.then((result) => {
       return result.json();
    }).then((dato) => {
-      console.log(dato);
+      for (let i = 0; i < 3; i++) {
+         console.log(dato.items[i]);
+         let template = document.querySelector("#servicios__muestra");
+         let serContenful = document.querySelector(".servicios__contenful");
+         let imgTemplate = template.content.querySelector(".imagen__template");
+         let descriptionTemplate = template.content.querySelector(
+            ".muestra__description"
+         );
+         let titleTemplate = template.content.querySelector(".muestra__title");
+         descriptionTemplate.innerHTML = dato.items[i].fields.description;
+         titleTemplate.innerHTML = dato.items[i].fields.title;
+         imgTemplate.src = dato.items[i].fields.urlImage;
+         let clone = document.importNode(template.content, true);
+         serContenful.appendChild(clone);
+      }
    });
 }
 
