@@ -37,6 +37,7 @@
 /* -------- MENU NAVEGACION ---------- */
 
 .menu__enalaces{
+   
 
 }
 
@@ -45,9 +46,10 @@
 }
 .enlace__barra li{
    list-style: none;
+   
 }
 
-.enlace__barra li div{
+.enlace__barra a > div{
    width: 25px;
    height: 5px;
    background-color:#fff;
@@ -57,7 +59,7 @@
 .barra__enlaces{
    font-size: 3rem;
    display: none;
-   top: 0;
+   top: 0%;
    right: 0;
    position: fixed;
    left: 0;
@@ -69,6 +71,9 @@
    row-gap: 5rem;
    height: 100vh;
    z-index: 10;
+   padding: 0;
+   transition: top 1s;  
+   
 }
 .barra__enlaces li a{
    color: #fff;
@@ -76,12 +81,16 @@
 }
 
 .barra__enlaces .enlaces__close{
-   height: 0;
-   width: 0;
+   top: 0;
+   right: 0;
+}
+.barra__enlaces .enlaces__close a{
+   font-family: 'Orbitron';
+   font-size: 2rem;
 }
 .enlaces__close{
    display: block;
-   position: absolute;
+   position:absolute;
    top: 35px;
    right: 30px;
    text-align: center;
@@ -91,12 +100,10 @@
 
 .enlaces__close a{
    text-decoration: none;
-}
-.enlaces__close a::before{
-   content:"X";
-   color: #fff;
    font-family: 'Roboto';
+   color: #fff;
 }
+
 /* ------------- */
 .header__title {
    display: flex;

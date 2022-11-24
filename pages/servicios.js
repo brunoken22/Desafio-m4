@@ -6,7 +6,6 @@ function main() {
       return result.json();
    }).then((dato) => {
       for (let i = 0; i < 3; i++) {
-         console.log(dato.items[i]);
          let template = document.querySelector("#servicios__muestra");
          let serContenful = document.querySelector(".servicios__contenful");
          let imgTemplate = template.content.querySelector(".imagen__template");
