@@ -6,11 +6,11 @@ function main() {
       <h1>Escribime</h1>
       </div>
       <label for="name" >Nombre</label>
-      <input type="text" name="name" id="name" class="form__name">
+      <input type="text" name="name" id="name" class="form__name"required>
       <label for="email">Email</label>
-      <input type="email" name="email" id="email" class="form__email">
+      <input type="email" name="email" id="email" class="form__email" required>
       <label for="mensaje">Mensaje</label>
-      <textarea name="mensaje" id="mensaje" class="form__mensaje"></textarea>
+      <textarea name="mensaje" id="mensaje" class="form__mensaje" required></textarea>
       <div class="form__btn">
       <button>Enviar</button>
       </div>
