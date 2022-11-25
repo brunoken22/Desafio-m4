@@ -14,12 +14,22 @@ function main() {
       <div class="form__btn">
       <button>Enviar</button>
       </div>
+      <div class="form__mensaje-enviado">
+      <figure class="mensaje-enviado-img">
+      <img src="./imagenes/check.png" alt="" class="">
+      </figure>
+      <p class="mensaje-enviado-texto">Mensaje Enviado</p>
+      <button class="btn__aceptar">Aceptar</button>
+      </div>
       </form>
    `;
    let name = forms.querySelector(".form__name");
    let email = forms.querySelector(".form__email");
    let mensaje = forms.querySelector(".form__mensaje");
-   forms.addEventListener("submit", () => {
+   let formMensaje = forms.querySelector(".form__mensaje-enviado")
+   let btn = forms.querySelector(".btn__aceptar")
+   forms.addEventListener("submit", (e) => {
+      e.preventDefault()
       const mensaj = {
          to: "bruno_am_22@hotmail.com",
          message: `Nombre: ${name.value}\n Email: ${email.value}\n Mensaje: "${mensaje.value}".`,
@@ -29,7 +39,12 @@ function main() {
          body: JSON.stringify(mensaj),
          headers: { "content-type": "application/json" },
       });
+      formMensaje.style.display="flex";
    });
+   btn.addEventListener("click",(e)=>{
+      e.preventDefault();
+      formMensaje.style.display = "none"
+   })
 }
 
 main();

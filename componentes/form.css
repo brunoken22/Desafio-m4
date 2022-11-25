@@ -54,3 +54,41 @@
    background-color: #606060;
 }
 
+/* ------------------------------ */
+
+.form__mensaje-enviado{
+   display: none;
+   flex-direction: column;
+   position: fixed;
+   justify-content: center;
+   align-items: center;
+   background-color:rgb(255, 255, 255);
+   top: 0;
+   right: 0;
+   left: 0;
+   bottom: 0;
+   background-attachment: fixed;
+}
+
+.mensaje-enviado-img img{
+   height: 15rem;
+   width: 15rem;
+   margin-bottom: 1.5rem;
+}
+
+.mensaje-enviado-texto{
+   font-size: 2rem;
+   font-weight: 700;
+   color: #000;
+   margin-bottom: 3rem;
+}
+
+.btn__aceptar{
+   border: none;
+   font-size: 1rem;
+   font-weight: 500;
+   background-color: #e4f0f9;
+   width: 100px;
+   padding: 1rem;
+   border-radius: 8px;
+}
