@@ -47,10 +47,11 @@
    flex-direction: column;
    row-gap: 1rem;
    margin-bottom: 1rem;
-   width: 50%;
+   width: 95%;
    border: solid 1px #fff;
    border-radius: 11px;
    height: 100vh;
+
 }
 
 .img{
@@ -80,7 +81,15 @@
    justify-content: flex-end;
 }
 .contenido__enlace a{
-   color: blue;
+   color: rgb(116, 116, 240);
    text-decoration: none;
    font-weight: 700;
+}
+.contenido__enlace a:hover{
+   color: rgb(163, 143, 255);
+
+}
+.contenido__enlace a:active{
+   color: rgb(139, 139, 235);
+   font-size: 1.1rem;
 }
