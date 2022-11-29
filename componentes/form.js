@@ -45,7 +45,10 @@ function main() {
    });
    btn.addEventListener("click",(e)=>{
       e.preventDefault();
-      formMensaje.style.display = "none"
+      formMensaje.style.display = "none";
+      name.value = "";
+      email.value = "";
+      mensaje.value = "";
    })
 }
 
