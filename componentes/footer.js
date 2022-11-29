@@ -7,9 +7,9 @@ function main() {
      <h2>BRUNO</h2>
    </div>
    <div class="contenido__icon">
-       <a href="#"><img src="./imagenes/instagram.png" alt="">Instagram</a>
-       <a href="#"><img src="./imagenes/linkedin.png" alt="">Linkedin</a>
-       <a href="#"><img src="./imagenes/github.png" alt="">GitHub</a>
+       <a href="#" target="_blank"><img src="./imagenes/instagram.png" alt="">Instagram</a>
+       <a href="https://www.linkedin.com/in/brunoken18/" target="_blank"><img src="./imagenes/linkedin.png" alt="">Linkedin</a>
+       <a href="https://github.com/brunoken22" target="_blank"><img src="./imagenes/github.png" alt="">GitHub</a>
    </div>
  </div>
    `;

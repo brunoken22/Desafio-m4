@@ -5,6 +5,7 @@ function main() {
       <div class="form__title">
       <h1>Escribime</h1>
       </div>
+      <div class="form__complet">
       <label for="name" >Nombre</label>
       <input type="text" name="name" id="name" class="form__name"required>
       <label for="email">Email</label>
@@ -13,6 +14,7 @@ function main() {
       <textarea name="mensaje" id="mensaje" class="form__mensaje" required></textarea>
       <div class="form__btn">
       <button>Enviar</button>
+      </div>
       </div>
       <div class="form__mensaje-enviado">
       <figure class="mensaje-enviado-img">

@@ -4,16 +4,41 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
-   <link rel="stylesheet" href="style.css">
-   <script defer src="script.js"></script>
-</head>
+   <title>Servicios</title>
+   <!-- HEADER -->
+   <link rel="stylesheet" href="./componentes/header.css">
+   <script defer src="./componentes/header.js"></script>
+   <script defer src="./componentes/header__ham.js"></script>
+
+   <!-- SERVICIOS -->
+   <link rel="stylesheet" href="./pages/servicios.css">
+   <script defer src="./pages/servicios.js"></script>
+
+   
+   <link rel="stylesheet" href="./componentes/footer.css">
+   <script defer src="./componentes/footer.js"></script>
+
+</head>     
 <body>
-   <div class="menu">
-      <button class="menu__boton">Abrir</button>
-      <div class="menu__enlaces">
-         <h1 >hola</h1>
+   <!-- header -->
+   <header class="header"></header>
+
+   <!-- contenido  -->
+   <section class="contenido">
+      <div class="contenido__title">
+         <h2>Servicios</h2>
       </div>
-   </div>
+      <div class="contenido__contenful"></div>
+      <template id="template__contenful">
+         <div class="contenful__contenido">
+            <img src="" alt="" class="img">
+            <h3 class="contenido__titulo"></h3>
+            <p class="contenido__description"></p>
+         </div>
+      </template>
+   </section>
+
+   <!-- footer -->
+   <section class="footer"></section>
 </body>
 </html>

@@ -1,25 +1,28 @@
-function main() {
-   const api = fetch(
-      "https://cdn.contentful.com/spaces/dehbm7ub5p2i/environments/master/entries?access_token=Qf7Zb-brgliU0brmmNOEMA6joqIGxQhy3_WSoGD1B8Y"
-   );
-   api.then((result) => {
-      return result.json();
-   }).then((dato) => {
-      for (let i = 0; i < 3; i++) {
-         let template = document.querySelector("#servicios__muestra");
-         let serContenful = document.querySelector(".servicios__contenful");
-         let imgTemplate = template.content.querySelector(".imagen__template");
-         let descriptionTemplate = template.content.querySelector(
-            ".muestra__description"
-         );
-         let titleTemplate = template.content.querySelector(".muestra__title");
-         descriptionTemplate.innerHTML = dato.items[i].fields.description;
-         titleTemplate.innerHTML = dato.items[i].fields.title;
-         imgTemplate.src = dato.items[i].fields.urlImage;
-         let clone = document.importNode(template.content, true);
-         serContenful.appendChild(clone);
-      }
-   });
+function mostarDatos(result){
+   let contenidoContenful = document.querySelector(".contenido__contenful");
+   
+   let template = document.querySelector("#template__contenful");
+   for(let item of result.Asset){
+      let img = template.content.querySelector(".contenful__contenido .img");
+      let titulo = template.content.querySelector(".contenido__titulo");
+      let description = template.content.querySelector(".contenido__description");
+      
+      img.src = item.fields.file.url;
+      titulo.textContent = item.fields.title;
+      description.textContent = item.fields.description;
+
+      let clone = document.importNode(template.content,true)
+      contenidoContenful.appendChild(clone)
+   }
 }
 
-main();
+function main(){
+   fetch("https://cdn.contentful.com/spaces/dehbm7ub5p2i/environments/master/entries?access_token=qV9IuSz_Kg1vf-fGr32-Y3rLRNDwhjGpbbEd99-JOVA&content_type=servicios")
+   .then(result => {
+      return result.json();
+   })
+   .then(dato => {
+      return mostarDatos(dato.includes);
+   })
+}
+main()

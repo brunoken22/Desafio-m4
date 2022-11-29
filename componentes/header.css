@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins&family=Roboto&display=swap');
 
 *{
    box-sizing: border-box;
@@ -32,13 +32,45 @@
 .menu__logo .logo__title{
    font-family: 'Orbitron';
    color: #fff;
-}
 
+}
+@media(min-width:500px){
+   .menu__logo .logo__title{
+      font-size: 2rem;
+   }
+}
+.menu__logo .logo__title a{
+   text-decoration: none;
+   color: #fff;
+}
 /* -------- MENU NAVEGACION ---------- */
 
-.menu__enalaces{
+.menu__enlace-large{
+   display: none;
+}
+.enlaces-large{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   column-gap: 1.5rem;
+}
+.enlaces-large li{
+   list-style: none;
    
-
+}
+.enlaces-large li a{
+   text-decoration: none;
+   color: #fff;
+   font-family: 'Poppins';
+   font-size: 1.2rem
+}
+@media(min-width:500px){
+   .menu__enlaces{
+      display: none;
+   }
+   .menu__enlace-large{
+      display: flex;
+   }
 }
 
 .enlace__barra{
@@ -129,10 +161,14 @@
    justify-content: center;
    text-align: center;
 }
+@media(min-width:500px){
+   .presentacion{
+      background-color: #fff;
+   }
+}
 .presentacion__contenido{
    display:flex;
    flex-direction: column;
-   ;
    color: #fff;
    font-family: 'Roboto';
    justify-content: center;
@@ -140,9 +176,68 @@
    row-gap: 2rem;
    height: 100%
 }
-.contenido__title{
+@media(min-width:500px){
+   .presentacion__contenido{
+      flex-direction: row;
+      color: #000;
+      align-items: center;
+      justify-content: center;
+
+   }
+}
+
+.contenido__image img{
+   height: 300px;
+   display: none;
+}
+@media(min-width:500px){
+   .contenido__image img{
+      display: block ;
+   }
+}
+
+
+@media(min-width:500px){
+   .contenido__texto{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width:100%;
+
+   }
+}
+.contenido__title h3{
+   font-family: 'Poppins';
    font-size: 1.7rem;
    text-align: center;
    margin-bottom:2rem;
 }
+@media(min-width:500px){
+   .contenido__title h3{
+      font-family: 'Poppins';
+      color: #000;
+   }
+}
+@media(min-width:500px){
+   .contenido__description {
+      margin: 0;
+      padding: 0;
+   }
+}
+.contenido__description p{
+   margin: 0;
+   padding: 0;
 
+}
+@media(min-width:500px){
+   .contenido__description p{
+      max-width: 300px;
+      text-align: start;
+      margin: 0;
+      padding: 0;
+   }
+}
+p{
+   margin: 0;
+   padding: 0;
+}

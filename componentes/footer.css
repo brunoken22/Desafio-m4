@@ -13,8 +13,14 @@
    padding: 2.5rem 0;
 
 }
-
-.contenido__title {
+@media(min-width:500px){
+   .footer__contenido{
+      flex-direction: row;
+      justify-content: space-between;
+      margin: auto 2rem;
+   }
+}
+.contenido__title h2{
    font-family: 'Orbitron';
    color: #fff;
 }
@@ -28,7 +34,11 @@
    margin: 2rem;
    row-gap: 1rem;
 }
-
+@media(min-width:500px){
+   .contenido__icon{
+      margin: 0;
+   }
+}
 .contenido__icon a{
    color: #fff;
    text-decoration: none;

@@ -1,0 +1,7 @@
+.header{
+   background: #000;
+   height: auto;
+}
+.header__title{
+   display: none;
+}

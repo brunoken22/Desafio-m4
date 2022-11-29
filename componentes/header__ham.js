@@ -9,7 +9,7 @@ function main() {
          hamNone.style.display = "flex";
       } else if ((hamNone.style.display = "flex")) {
          hamNone.style.display = "none";
-      }
+      }  
    });
 }
 main();
